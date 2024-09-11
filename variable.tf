@@ -2,6 +2,14 @@ variable "region" {
   description = "AWS region"
   default     = "us-west-2"
 }
+variable "access_key" {
+  type = string
+  
+}
+variable "secret_key" {
+  type = string
+  
+}
 variable "cluster_name" {
   type = object({
       cluster_name = string
